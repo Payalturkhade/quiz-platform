@@ -13,7 +13,7 @@ function Leaderboard() {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const res = await API.get(`/attempts/${quizId}/leaderboard`);
+        const res = await API.get(`/attempt/${quizId}/leaderboard`);
         setLeaderboard(res.data);
 
         // Fetch logged-in user ID
