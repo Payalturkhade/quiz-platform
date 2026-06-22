@@ -51,7 +51,7 @@ const CreateQuiz = () => {
     setLoading(true);
     try {
       const payload = { title, timeLimit, questions };
-      await API.post("/quiz", payload);
+      await API.post("/quizzes", payload);
       setSuccess("Quiz created successfully!");
       navigate("/admin");
     } catch (err) {
