@@ -43,7 +43,7 @@ function SolveQuiz() {
 
   const submitQuiz = async () => {
     try {
-      await API.post(`/attempt/${id}`, { answers });
+      await API.post(`/attempts/${id}`, { answers });
       alert("Quiz submitted!");
       navigate("/dashboard");
     } catch (err) {
