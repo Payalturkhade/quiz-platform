@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true })); // For form-data (multer)
 // Routes
 app.use('/api/auth', authRouter);
 app.use('/api/quizzes', quizRouter); // General quiz routes (e.g., create/fetch quizzes)
-app.use('/api/attempt', attemptRouter);
+app.use('/api/attempts', attemptRouter);
 
 // Placeholder route for the root path
 app.get('/', (req, res) => {
