@@ -11,7 +11,7 @@ function ResultPage() {
   useEffect(() => {
     const fetchAttempt = async () => {
       try {
-        const res = await API.get(`/attempts/${attemptId}`);
+        const res = await API.get(`/attempt/${attemptId}`);
         setAttempt(res.data);
         console.log("Fetched attempt:", res.data);
       } catch (err) {
